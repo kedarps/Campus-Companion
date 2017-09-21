@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    tools:context=".ConnectActivity" >
+
+    <Button
+        android:id="@+id/Cancel_disarm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/disarmEntry"
+        android:layout_below="@+id/disarmEntry"
+        android:layout_marginTop="22dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/OK_disarm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Cancel_disarm"
+        android:layout_alignBottom="@+id/Cancel_disarm"
+        android:layout_alignRight="@+id/disarmEntry"
+        android:text="OK" />
+
+    <EditText
+        android:id="@+id/disarmEntry"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:digits="@string/specific_chars"
+        android:inputType="number" 
+        android:gravity="center"/>
+
+</RelativeLayout>

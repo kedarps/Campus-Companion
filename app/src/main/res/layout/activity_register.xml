@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wholePage"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:orientation="vertical" 
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/userCredTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:background="@android:color/darker_gray"
+        android:text="User Credentials"
+        android:textSize="20sp" 
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_weight="1.00"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName" 
+        android:hint="First Name*">
+        
+        <requestFocus android:layout_width="match_parent" />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.00"
+        android:ems="10"
+        android:inputType="textPersonName" 
+        android:hint="Last Name*"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.00"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.00"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone Number"/>
+
+    <TextView
+        android:id="@+id/emerContTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:background="@android:color/darker_gray"
+        android:text="Emergency Contacts"
+        android:textSize="20sp" 
+        android:gravity="center"/>
+	
+    <LinearLayout 
+        android:layout_width="300dp" 
+        android:layout_height="45dp" 
+        android:layout_marginTop="10dp"
+	  	android:orientation="horizontal"
+	  	android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/emerCont1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Email #1*"
+            android:inputType="textEmailAddress" />
+
+		<ImageView
+		    android:id="@+id/emerCont1Select"
+		    android:layout_width="45dp"
+		    android:layout_height="45dp"
+		    android:src="@mipmap/ic_social_add_person"
+		    android:contentDescription="@null" />
+	
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="300dp" 
+        android:layout_height="45dp" 
+        android:layout_marginTop="10dp"
+	  	android:orientation="horizontal"
+	  	android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/emerCont2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Email #2"
+            android:inputType="textEmailAddress" />
+
+		<ImageView
+		    android:id="@+id/emerCont2Select"
+		    android:layout_width="45dp"
+		    android:layout_height="45dp"
+		    android:src="@mipmap/ic_social_add_person"
+		    android:contentDescription="@null" />
+	
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="300dp" 
+        android:layout_height="45dp" 
+        android:layout_marginTop="10dp"
+	  	android:orientation="horizontal"
+	  	android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/emerCont3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Email #3"
+            android:inputType="textEmailAddress" />
+
+		<ImageView
+		    android:id="@+id/emerCont3Select"
+		    android:layout_width="45dp"
+		    android:layout_height="45dp"
+		    android:src="@mipmap/ic_social_add_person"
+		    android:contentDescription="@null" />
+	
+	</LinearLayout>
+
+    <TextView
+        android:id="@+id/disarmTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:background="@android:color/darker_gray"
+        android:text="Disarm Code"
+        android:textSize="20sp" 
+        android:gravity="center"/>
+    
+    <LinearLayout 
+        android:layout_width="300dp" 
+        android:layout_height="45dp" 
+        android:layout_marginTop="10dp"
+	  	android:orientation="horizontal"
+	  	android:layout_gravity="center_horizontal">
+
+        <EditText
+	        android:id="@+id/disarmCode"
+	        android:layout_width="0dp"
+	        android:layout_height="45dp"
+	        android:layout_weight="1.00"
+	        android:layout_gravity="center"
+	        android:ems="10"
+	        android:maxLength="4"
+	        android:inputType="number" 
+	        android:hint="Unique 4 Digit Number*"/>
+
+	</LinearLayout>
+    
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Submit" 
+        android:textSize="30sp"
+        android:background="@mipmap/rounded_corners_blue"/>
+    
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal" >
+
+    <Spinner
+        android:id="@+id/CrimeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CrimeSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textSize="25sp"
+        android:hint="Your Message Here" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/txtMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:src="@mipmap/ic_device_access_camera"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/addVideo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtMessage"
+        android:layout_marginTop="29dp"
+        android:src="@mipmap/ic_device_access_video"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/addAudio"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtMessage"
+        android:layout_marginTop="29dp"
+        android:src="@mipmap/ic_device_access_mic"
+        android:contentDescription="@null"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addImage"
+        android:layout_marginTop="29dp"
+        android:text="Send" 
+        android:textSize="30sp"
+        android:background="@mipmap/rounded_corners_orange"/>
+
+</RelativeLayout>

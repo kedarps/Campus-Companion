@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/Emergency"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_margin="15dp"
+        android:background="@mipmap/rounded_corners_blue"
+        android:drawableLeft="@mipmap/ic_emergency"
+        android:text="@string/txt_emergency"
+        android:textSize="30sp"/>
+    
+    <Button
+        android:id="@+id/Report"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_margin="15dp"
+        android:drawableLeft="@mipmap/ic_report"
+        android:background="@mipmap/rounded_corners_orange"
+        android:text="@string/txt_report"
+        android:textSize="30sp"/>
+
+	<Button
+        android:id="@+id/Connect"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_margin="15dp"
+        android:background="@mipmap/rounded_corners_green"
+        android:drawableLeft="@mipmap/ic_connect"
+        android:text="@string/txt_connect"
+        android:textSize="30sp"/>
+
+</LinearLayout>

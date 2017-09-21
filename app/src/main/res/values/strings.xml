@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Campus Companion</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string-array name="crime_array">
+        <item>Theft</item>
+        <item>Suspicious Activity</item>
+        <item>Abuse</item>
+        <item>Vandalism</item>
+        <item>Noise</item>
+    </string-array>
+    <string name="specific_chars">1234567890</string>
+    <string name="txt_emergency">Emergency</string>
+    <string name="txt_report">Report</string>
+    <string name="txt_connect">Connect</string>
+    
+</resources>

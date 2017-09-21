@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/checkpointInstr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:src="@mipmap/checkpoint_instr" />
+
+    <ImageView
+        android:id="@+id/clearCheckpoint"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/clear_checkpoint" />
+
+    <ImageView
+        android:id="@+id/setCheckpoint"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/clearCheckpoint"
+        android:contentDescription="@null"
+        android:src="@mipmap/set_checkpoint" />
+
+    <TextView
+        android:id="@+id/mins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/minPicker"
+        android:layout_marginRight="17dp"
+        android:text="mins"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/hrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/hrsPicker"
+        android:layout_marginRight="25dp"
+        android:text="hrs"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <NumberPicker
+        android:id="@+id/hrsPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_above="@+id/hrs"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/minPicker" />
+
+    <NumberPicker
+        android:id="@+id/minPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_above="@+id/mins"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp" />
+
+</RelativeLayout>

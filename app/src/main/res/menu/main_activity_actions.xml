@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+      xmlns:myapp="http://schemas.android.com/apk/res-auto">
+	
+    <item android:id="@+id/action_notifications"
+          android:icon="@mipmap/ic_action_view_as_list"
+          android:title="Notifications" 
+          myapp:showAsAction="always" />
+    
+    <item android:id="@+id/action_settings"
+          android:icon="@mipmap/ic_action_settings"
+          android:title="Settings" 
+          myapp:showAsAction="always" />
+    
+	<item android:id="@+id/action_profile"
+          android:icon="@mipmap/ic_action_accounts"
+          android:title="Profile"
+          myapp:showAsAction="always" />
+	
+    <item android:id="@+id/action_about"
+          android:icon="@mipmap/ic_action_about"
+          android:title="About" 
+          myapp:showAsAction="always" />
+</menu>
