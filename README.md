@@ -16,6 +16,7 @@ This feature allows you to report any suspicious activity by sending text messag
 ### Connect page
 <img src="screenshots/connect_page.png" width="250">
 This feature enables continuous transmission and tracking your GPS location. This feature can be discreetly activated using one-of-three methods:
-- Pressing and holding the 'Help' button.
-- Rotating your phone
-- Disconnecting the headset
+
+  - Pressing and holding the 'Help' button.
+  - Rotating your phone
+  - Disconnecting the headset
