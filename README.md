@@ -3,13 +3,13 @@ Campus-Companion was part of [Duke start-up challenge](http://www.dukestartupcha
 Development of features in this app was done in close collaboration with Dr. Jordan Malof, Dr. Nicholas Czarneck and Alex Sonageri. Here are some screenshots from the app.
 
 ### Main page
-<img src="screenshots/main_page.png" width="50">
+<img src="screenshots/main_page.png" width="200">
 
 ### Emergency page
-![](/screenshots/emergency_page.png)
+<img src="screenshots/emergency_page.png" width="200">
 
 ### Report page
-![](/screenshots/report_page.png)
+<img src="screenshots/report_page.png" width="200">
 
 ### Connect page
-![](/screenshots/connect_page.png)
+<img src="screenshots/connect_page.png" width="200">
